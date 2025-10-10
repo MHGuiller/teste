@@ -36,17 +36,17 @@ int main(){
 	printf("Escolha: ");
 	scanf("%d", &nivel);
 	
-	switch(nivel){
-		case 1:
-			totalDeTentativas = VINTE_TENTATIVAS;
-			break;
-		case 2:
-			totalDeTentativas = QUINZE_TENTATIVAS;
-			break;
-		default: 
-			totalDeTentativas = SEIS_TENTATIVAS;
-			break;
-	}
+														switch(nivel){
+															case 1:
+																totalDeTentativas = VINTE_TENTATIVAS;
+																break;
+															case 2:
+																totalDeTentativas = QUINZE_TENTATIVAS;
+																break;
+															default: 
+																totalDeTentativas = SEIS_TENTATIVAS;
+																break;
+														}
 
 	for(int i = PRIMEIRO_TENTATIVA; i <= totalDeTentativas; i++){
 		printf("\n-> Tentativa %d de %d\n\n", i, totalDeTentativas);
